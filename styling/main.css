@@ -2,4 +2,15 @@ body {
     background-color: rgb(48, 47, 47);
 }
 
+@font-face {
+    font-family: 'M Plus rounded 1c';
+    src: url('/media/fonts/MPLUSRounded1c-Regular.ttf');
+}
 
+
+.circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
