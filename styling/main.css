@@ -7,9 +7,12 @@ body {
     src: url('/media/fonts/MPLUSRounded1c-Regular.ttf');
 }
 
+.main{
+    width: 40%;
+}
 
 .circle {
-    background: lightblue;
+    background: rgb(255, 255, 255);
     border-radius: 50%;
     width: 100px;
     height: 100px;
