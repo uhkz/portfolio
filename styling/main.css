@@ -7,14 +7,67 @@ body {
     src: url('/media/fonts/MPLUSRounded1c-Regular.ttf');
 }
 
-.main{
-    width: 40%;
-    /*font-family: Mplusrounded1c;*/
+.Mplus {
+    font-family: Mplusrounded1c; 
+}
+
+.underline {
+text-decoration: underline 4px
+ rgb(82, 82, 82);
+}
+
+a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: rgb(177, 177, 177)!important;
+}
+
+.main {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    display: block;
+    outline: 2px solid white;
+    width: 400px;
+    height: 200px;
+
 }
 
 .circle {
     background: rgb(255, 255, 255);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
 }
+
+footer {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.391);
+    text-align: center;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+.fadein05{
+    animation: fade-in 0.5s ease-in;}
+.fadein07{
+    animation: fade-in 0.8s ease-in;}
+.fadein09{
+    animation: fade-in 1.1s ease-in;}
