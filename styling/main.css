@@ -41,6 +41,7 @@ a {
     align-items: center;
     gap: 1.33rem;
     cursor: pointer;
+    padding: 0.66rem;
 }
 
 #icon-sun {
