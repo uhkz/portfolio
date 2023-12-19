@@ -35,10 +35,15 @@
     --switch-circle-pos: 0.15rem;
 }
 
+:root {
+    --default-transition: color .3s ease-in-out, background-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
+}
+
 
 /* General */
 body {
     background-color: var(--page-bg);
+    transition: var(--default-transition);
 }
 
 @font-face {
