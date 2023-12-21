@@ -1,6 +1,6 @@
 /* Properties */
 :root[data-theme="dark"] {
-    --page-bg: rgb(25, 25, 25);
+    --page-bg: rgb(43, 43, 43);
 
     --primary-text: white;
     --secondary-text: rgba(255, 255, 255, 0.4);
@@ -43,7 +43,7 @@
 /* General */
 body {
     background-color: var(--page-bg);
-    transition: var(--default-transition);
+   transition: var(--default-transition);
 }
 
 @font-face {
@@ -84,6 +84,7 @@ a {
     padding: 0.46rem;
     position: relative;
     max-width: 80px;
+   
 }
 
 #theme-switcher::before {
@@ -96,10 +97,12 @@ a {
     z-index: 0;
     left: 0;
     transform: translateX(var(--switch-circle-pos));
+    transition: var(--default-transition);
 }
 
 #theme-switcher svg {
     z-index: 1;
+    transform: var(--default-transition);
 }
 
 #icon-sun {
