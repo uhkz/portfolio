@@ -1,5 +1,10 @@
-let localS = localStorage.getItem('theme');
+let localS = localStorage.getItem('theme'),
+    themeToSet = localS
 
-      if (localS === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark')
+
+
+      if (!localS) {
+       themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       }
+
+      document.documentElement.setAttribute('data-theme', themeToSet)
