@@ -10,6 +10,8 @@
 
   --navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28999, 999, 999, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --navbar-toggler-border-color: rgb(255, 255, 255);
+  --dropdown-menu: #6c757d;
+  --dropdown-menu-color: white;
 
   --switch-bg: #434343;
   --switch-circle-bg: #7190ff;
@@ -30,6 +32,7 @@
 
   --navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28000, 00, 00, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --navbar-toggler-border-color: rgb(0, 0, 0);
+  --dropdown-menu: white;
 
   --switch-bg: #f5f5f6;
   --switch-circle-bg: #ffd371;
@@ -84,6 +87,14 @@ a {
 
 .navbar-toggler {
   border-color: var(--navbar-toggler-border-color);
+}
+
+.dropdown-menu {
+  background-color: var(--dropdown-menu);
+}
+
+.dropdown-item {
+  color: var(--dropdown-menu-color);
 }
 
 #theme-switcher {
