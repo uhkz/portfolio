@@ -75,6 +75,9 @@ body {
 a {
   color: white;
 }
+.a2 {
+  color: var(--primary-text);
+}
 
 .fa-chevron-right {
   color: white;
