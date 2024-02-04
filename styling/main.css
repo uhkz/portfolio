@@ -73,6 +73,14 @@ body {
 }
 
 a {
+  color: white;
+}
+
+.fa-chevron-right {
+  color: white;
+}
+
+i {
   color: var(--primary-text);
 }
 

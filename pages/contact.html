@@ -28,16 +28,61 @@
     <div class="container main text-white mt-5">
         <div class="col">
             <h5 class="Mplus underline" id="about">Contact me</h5>
-            <p>Feel free to contact me! You can do so in different ways.</p>
+
+            <form class="mt-4" action="https://api.web3forms.com/submit" autocomplete="off" method="post">
+                <input type="hidden" name="access_key" value="b096cef8-68c9-4450-994f-e0320e633e77">
+                <input type="hidden" name="apikey" value="b096cef8-68c9-4450-994f-e0320e633e77">
+                <div class="mb-5 row fadein05">
+                    <div class="col">
+                        <label>First Name *</label>
+                        <input type="text" required maxlength="50" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="col">
+                        <label>Last Name *</label>
+                        <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+                    </div>
+                </div>
+                <div class="mb-5 row fadein07">
+                    <div class="col">
+                        <label for="email_addr">Email address *</label>
+                        <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="col">
+                        <label for="phone_input">Phone</label>
+                        <input type="tel" maxlength="50" class="form-control" id="phone_input" name="Phone"
+                            placeholder="">
+                    </div>
+                </div>
+                <div class="mb-5 fadein09">
+                    <label for="message">Message *</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+            
+                <div class="row fadein09">
+                    <div class="col">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success?title=Form%20submitted%20succesfully!&desc=Thank%20you%20for%20contacting%20me.%20I%20will%20reply%20as%20soon%20as%20possible.%20-%20Robin%20Smit">
+                <button type="submit" class="btn btn-secondary Mplus">Send</button>
+                </div>
+                <div class="col">
+                <div class="h-captcha" data-captcha="true"></div>
+            </div>
+            </div>
+            </form>
+
         </div>
-        <div class="col text-center">mail</div>
+        <div class="col mt-5 text-center fadein09">
+            <i class="fa-solid fa-envelope me-4"></i>smitrobin@icloud.com <br>
+            <a href="https://www.linkedin.com/in/dev-rsmit/"><i class="fa-brands fa-linkedin me-4"></i>www.linkedin.com/in/dev-rsmit</a>
+        </div>
       </div>
 
 
 </body>
-<footer>
+<footer class="mt-5">
     <p>© Robin Smit 2023</p>
   </footer>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
   <script src="../scripts/switch.js"></script>
   <script src="../scripts/HLoad.js"></script>
       <!--Bootstrap JS-->
