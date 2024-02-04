@@ -152,6 +152,10 @@ canvas {
   height: 200px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Blob */
 
 /* Footer */
