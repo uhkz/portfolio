@@ -59,8 +59,18 @@ body {
   src: url("/media/fonts/MPLUSRounded1c-Regular.ttf");
 }
 
+@font-face {
+  font-family: "OpenSans";
+  src: url(/media/fonts/OpenSans-Light.ttf);
+}
+
 .Mplus {
   font-family: Mplusrounded1c;
+  user-select: none;
+}
+
+.Roboto {
+  font-family: Roboto;
   user-select: none;
 }
 
