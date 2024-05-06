@@ -159,8 +159,8 @@ canvas {
   margin-bottom: 5vh;
   display: block;
   outline: 2px solid var(--primary-text);
-  width: 400px;
-  height: 200px;
+  width: 60%;
+  height: 40%;
 }
 
 a {
@@ -168,7 +168,29 @@ a {
 }
 
 /* Blob */
+.blob {
+  background-image: url(../media/IMG_4880.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 10vw;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+  filter: brightness(70%);
+  animation: animate 20s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
 
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
 /* Footer */
 
 footer {
