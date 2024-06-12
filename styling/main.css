@@ -53,6 +53,9 @@ body {
   background-color: var(--page-bg);
   transition: var(--default-transition);
 }
+* {
+  user-select: none;
+}
 
 @font-face {
   font-family: "Mplusrounded1c";
